@@ -1,0 +1,95 @@
+body {
+  font-family: "Yugioh", serif;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  background-image: url(../imagens/fundoSiteAnimado3.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 30px;
+  padding-top: 60px;
+}
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.cabecalho .titulo {
+  color: #f1ecff;
+  margin: 0;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.cartao {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+  width: 300px;
+  height: 500px;
+}
+
+.cartao.selecionado {
+  opacity: 1;
+  z-index: 1;
+}
+.cartao-agradecimento {
+    width: 550px;
+    height: 600px;
+    opacity: 0;
+}
+
+.cartao-agradecimento.selecionado {
+    opacity: 1;
+}
+
+.lista-personagens {
+  width: 300px;
+  height: 500px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  position: relative;
+}
+
+.btn-seta {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn-seta.btn-voltar {
+  transform: rotate(180deg);
+}
+
+.btn-seta:hover {
+  background-color: #8351fe;
+}
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  font-family: "Yugioh2", serif;
+  color: white;
+  font-size: 11px;
+}
