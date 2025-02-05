@@ -76,6 +76,7 @@ body {
   border: 0;
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
+  z-index: 15;
 }
 
 .btn-seta.btn-voltar {
