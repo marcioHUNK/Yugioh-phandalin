@@ -43,6 +43,7 @@ body {
     width: 550px;
     height: 600px;
     opacity: 0;
+    z-index: 1;
 }
 
 .cartao-agradecimento.selecionado {
